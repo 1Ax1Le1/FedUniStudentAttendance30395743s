@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+    </TextView>
+<!--    <com.hdev.calendar.view.SingleCalendarView-->
+<!--        android:id="@+id/calendar_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:layout_margin="15dp"-->
+<!--        tools:ignore="MissingClass" />-->
+
+    <com.necer.calendar.MonthCalendar
+
+        app:todayCheckedBackground="@color/blue"
+        app:todayCheckedSolarTextColor="@color/blue"
+        app:defaultCheckedLunarTextColor="@color/white"
+        app:todayCheckedLunarTextColor="@color/white"
+        app:todayUnCheckedLunarTextColor="@color/white"
+        app:defaultUnCheckedLunarTextColor="@color/white"
+        android:id="@+id/weekCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+
+
+
+    </com.necer.calendar.MonthCalendar>
+    <ListView
+        android:id="@+id/attendanceListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+</LinearLayout>

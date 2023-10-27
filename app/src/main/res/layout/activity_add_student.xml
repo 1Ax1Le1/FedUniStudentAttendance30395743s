@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/edtStudentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EnterStudentID"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:digits="123456789"/>
+
+
+    <EditText
+        android:id="@+id/edtStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EnterStudentName"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@color/lawngreen"
+        android:id="@+id/btnAddStudentToCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AddStudentsToTheCourse"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
